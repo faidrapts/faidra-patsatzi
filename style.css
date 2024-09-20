@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+   font-size: 1.5em;
+   font-weight: 600;
+   margin-bottom: 0.5em;
+}
+
+/* Default Font Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #282439;
+    color: #f0f0f0;
+    fill: #f0f0f0;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #f0f0f0;
+    color: #333;
+    fill: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #282439;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+/* Ensure the nav-icons are also aligned properly */
+.nav-icons {
+    margin-left: 25%;  /* Adjust margin size as needed */
+    display: flex;
+    gap: 7px; /* Space between icons */
+}
+
+.nav-icons svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+body.light-mode nav a:hover svg {
+    fill: #b45a75; /* Change fill color on hover */
+}
+body.dark-mode nav a:hover svg {
+    fill: #4fb2d5;; /* Change fill color on hover */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 12px;
+    width: 50%;
+    padding: 0;
+    margin-right: 25%; 
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.1em;
+    text-transform: lowercase;
+    transition: color 0.3s ease;
+}
+
+/* Flexbox container for text and image */
+.about-container {
+    display: flex;
+    align-items: top;  /* Vertically align the image with the text */
+    gap: 7%;  /* Space between the text and image */
+}
+
+/* Style for the profile picture */
+.profile-picture img {
+    width: 210px;  /* Adjust the width of the profile picture */
+    height: 280px; /* Keep the image square */
+    margin-top: 15%;
+    border-radius: 5%;  /* Make it circular */
+    object-fit: cover;  /* Ensure the image scales properly */
+}
+
+body.dark-mode section.content a {
+    color: #4fb2d5;
+}
+body.dark-mode nav ul li a:hover {
+    color: #4fb2d5;
+}
+
+/* Light Mode Navigation */
+body.light-mode nav {
+    background-color: #f0f0f0;
+}
+
+body.light-mode nav ul li a {
+    color: #333;
+}
+
+body.light-mode a:hover {
+    /* color: #23578a; */
+    color: #b45a75;
+}
+
+/* Toggle Mode Button Styling */
+.toggle-mode button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-mode button svg {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+.toggle-mode button a:hover svg {
+    fill: #666; /* Change fill color on hover */
+}
+
+/* Section Styling */
+section.content {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+    padding-top: 40px;
+    padding-left: 0%;
+    max-width: 1200px;
+    color: #f0f0f0;
+}
+
+body.light-mode section.content {
+    background-color: #f0f0f0;
+    color: #333;
+}
