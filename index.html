@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,18 @@
     <!-- Google Fonts: Poppins Light -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
+        <!-- Hamburger menu icon for mobile navigation -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <svg  id="dropdown-icon" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                <path
+                    d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+            </svg>
+        </div>
         <li class="nav-icons">
             <a href="mailto:faidra.patsatzi@tum.de" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +46,7 @@
                 </svg>
             </a>
         </li>
-        <ul>
+        <ul id="nav-list">
             <li><a href="index.html">about</a></li>
             <!-- <li><a href="education.html">education</a></li> -->
             <li><a href="projects.html">projects</a></li>
@@ -60,10 +70,15 @@
         <div class="about-container">
             <div class="about-text">
                 <h1>Faidra Anastasia Patsatzi</h1>
-                <p>I’m a graduate student in the MSc in Electrical Engineering and Information Technology at TUM (Technical University of Munich). Before that, I completed the BSc in Electrical Engineering and Information Technology at TUM. My academic focus is on deep learning, machine intelligence, and computer vision.</p>
+                <p>I’m a graduate student in the MSc in Electrical Engineering and Information Technology at TUM
+                    (Technical University of Munich). Before that, I completed the BSc in Electrical Engineering and
+                    Information Technology at TUM. My academic focus is on deep learning, machine intelligence, and
+                    computer vision.</p>
                 <br></br>
-                <p>Currently, I am in my second year of the MSc and split my time between study and work. I work at BMW Group's R&D center as part of a team focusing on GenAI use cases for vehicle development.</p>
-                <p>In my free time, I lead a women-in-STEM empowering student club, spend time in nature or in kickboxing classes, and develop my personal projects (like this website).</p>
+                <p>Currently, I am in my second year of the MSc and split my time between study and work. I work at BMW
+                    Group's R&D center as part of a team focusing on GenAI use cases for vehicle development.</p>
+                <p>In my free time, I lead a women-in-STEM empowering student club, spend time in nature or in
+                    kickboxing classes, and develop my personal projects (like this website).</p>
                 <br></br>
             </div>
             <div class="profile-picture">
@@ -72,16 +87,18 @@
         </div>
         <div class="about-container">
             <div class="about-text">
-            <h2>research interests</h2>
-            <p>I am interested in learning more about the fundamentals of deep learning, understanding LLMs better, and 
-                investigating current safety concerns and robustness. Adversarial machine learning 
-                (for both language and vision models) and deep learning for healthcare are some of the research 
-                fields I would be very excited to contribute to. </p>
-            </div> 
+                <h2>research interests</h2>
+                <p>I am interested in learning more about the fundamentals of deep learning, understanding LLMs better,
+                    and
+                    investigating current safety concerns and robustness. Adversarial machine learning
+                    (for both language and vision models) and deep learning for healthcare are some of the research
+                    fields I would be very excited to contribute to. </p>
+            </div>
         </div>
         <br></br><br></br>
     </section>
 
     <script src="script.js"></script>
 </body>
+
 </html>
